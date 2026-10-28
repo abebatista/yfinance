@@ -5,7 +5,10 @@ Advanced
 .. toctree::
    :maxdepth: 2
 
+   install
    logging
-   proxy
+   config
    caching
    multi_level_columns
+   price_repair
+   price_adjustment

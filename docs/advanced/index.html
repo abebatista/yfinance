@@ -28,7 +28,7 @@
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../_static/yfinance.css?v=6f22274e" />
   
@@ -45,7 +45,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'advanced/index';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Logging" href="logging.html" />
+    <link rel="next" title="Installation" href="install.html" />
     <link rel="prev" title="yfinance documentation" href="../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -121,8 +121,14 @@
   
   
   
+    
+    
+      
+    
+    
+    <img src="../_static/logo-light.webp" class="logo__image only-light" alt="yfinance - Home"/>
+    <script>document.write(`<img src="../_static/logo-dark.webp" class="logo__image only-dark" alt="yfinance - Home"/>`);</script>
   
-    <p class="title logo__title">yfinance</p>
   
 </a></div>
     
@@ -324,10 +330,13 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="logging.html">Logging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="proxy.html">Proxy Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Config</a></li>
 <li class="toctree-l1"><a class="reference internal" href="caching.html">Caching</a></li>
 <li class="toctree-l1"><a class="reference internal" href="multi_level_columns.html">Multi-Level Column Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="price_repair.html">Price Repair</a></li>
+<li class="toctree-l1"><a class="reference internal" href="price_adjustment.html">Price adjustment</a></li>
 </ul>
 </div>
 </nav></div>
@@ -386,14 +395,25 @@ document.write(`
 <h1>Advanced<a class="headerlink" href="#advanced" title="Link to this heading">#</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="logging.html">Logging</a></li>
-<li class="toctree-l1"><a class="reference internal" href="proxy.html">Proxy Server</a></li>
+<li class="toctree-l1"><a class="reference internal" href="config.html">Config</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="config.html#network">Network</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html#debug">Debug</a></li>
+<li class="toctree-l2"><a class="reference internal" href="config.html#locale">Locale</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="caching.html">Caching</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="caching.html#smarter-scraping">Smarter Scraping</a></li>
 <li class="toctree-l2"><a class="reference internal" href="caching.html#persistent-cache">Persistent Cache</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="multi_level_columns.html">Multi-Level Column Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="price_repair.html">Price Repair</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="price_repair.html#id1">Price repair</a></li>
+<li class="toctree-l2"><a class="reference internal" href="price_repair.html#dividend-repair-new">Dividend repair (new)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="price_adjustment.html">Price adjustment</a></li>
 </ul>
 </div>
 </section>
@@ -418,11 +438,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="logging.html"
+       href="install.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Logging</p>
+        <p class="prev-next-title">Installation</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -470,7 +490,7 @@ document.write(`
 
   <p class="copyright">
     
-      © Copyright 2017-2019 Ran Aroussi.
+      © Copyright 2017-2025 Ran Aroussi.
       <br/>
     
   </p>
